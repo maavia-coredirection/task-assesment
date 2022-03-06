@@ -47,7 +47,7 @@
           {{ product.status }}
         </td>
         <td>
-          <img v-bind:src="`https://3747-39-42-99-236.ngrok.io/storage/uploads/${product.image}`" alt="">
+          <img v-bind:src="`http://localhost:8000/storage/uploads/${product.image}`" alt="">
         </td>
         <td>
           <button v-on:click="updateProduct(product)">edit</button>

@@ -67,7 +67,7 @@ export default {
     createUser() {
       createUserAccount(this.user)
         .then((response) => {
-          performAfterAuthSteps(this.$store, this.$router, response.access_token)
+          this.$router.push('/login')
         });
     }
   }
